@@ -1,0 +1,192 @@
+html
+{
+    font-family:courier new;
+    display:none;min-height: 100%;position:relative;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+.page-footer
+{
+    height:75px;background-color:#E6F9B3;
+     border-top:solid 1px #D4E89B;
+}
+#headerImg
+{
+    background: url('./media/header-bg.jpg');
+    background-size:cover;
+    height:110px; width:100%;
+    margin:10px auto;
+    border:solid 2px #66AA0D;
+}
+
+#headerTxt
+{
+    color:#53EF80;
+    text-shadow: -1px 3px darkgreen;
+    letter-spacing: 3px;
+    font-size:150%;
+    padding:2.5%;
+    height:110px;
+}
+
+#tabs
+{
+    font-size:70%;
+    border-bottom:solid 1px #ECFAC5;
+}
+
+#tabs a:hover
+{
+    border:solid 1px #ECFAC5;
+    border-bottom:none;
+}
+#tabs .active
+{
+    border:solid 1px #ECFAC5;
+    border-bottom:none;
+}
+
+#tabs a
+{
+    color:darkgreen;
+}
+
+#tLastChild a
+{
+    border-right:none;
+}
+.custHead
+{
+    font-family:"Lucida Console", Monaco, monospace;
+    margin:3%;
+    font-size:90%;
+    letter-spacing:4px;padding-top:1%;
+}
+
+.aboutP
+{
+    margin-bottom:24%;
+}
+.custHead kbd
+{
+    box-shadow: 3px 4px lightgrey;
+    -moz-box-shadow: 3px 4px lightgrey;
+    -webkit-box-shadow: 3px 4px lightgrey;
+}
+
+.para
+{
+    font-size:70%;
+    line-height:179%;
+}
+
+#aboutImgs
+{
+   
+    width:35%;height:35%;float:right;
+    margin:1%; margin-top:20px;
+    border-radius:45%;border:solid 2px #DCC8C7;
+}
+
+#quote
+{
+    margin:3%;
+    font-size:90%
+}
+
+#myMap
+{
+    height:250px;float:left;margin:2%;
+}
+
+.card 
+{
+    font-size:80%;
+    padding:1%;float:left;
+    letter-spacing:2px;margin:2%;margin-top:3.3%;
+}
+
+
+#contactH
+{
+    margin:3% auto;
+    margin-bottom:5%;
+}
+#contactH kbd
+{
+    padding:7px;
+}
+.card ul li:first-child
+{
+    border-top:none;
+}
+
+.aspies
+{
+    width:19rem;
+   
+}
+
+#adi,#gary
+{
+    margin:2% auto;margin-bottom:24%;
+}
+
+.card-img-top
+{
+    margin:0 auto;
+}
+
+.card-title
+{
+    font-size: 100%;
+}
+
+
+.aboutMPara
+{
+    margin-top:5%;margin-bottom:24%;
+}
+
+
+.footR
+{
+    background-color: #D8ED9E;
+    border-top:solid 1px #D2E599;
+    font-family:"Lucida Console", Monaco, monospace;
+    letter-spacing: 3px;
+}
+.contactCard
+{
+    margin-bottom:24%;
+}
+
+.dropup,.dropdown-item:hover
+{
+    background-color: #C5E575;
+    border-top:solid 3px #BDDB72;
+}
+.dropdown-toggle
+{
+    color:black;
+}
+.dropdown-menu
+{
+    background-color: #E1F2B8;
+}
+.dropdown-item:active
+{
+    color:black;
+    background-color:#A5E011;
+}
+
+#contentWhenColled h5
+{
+    padding-top: 0;
+}
+
+#smileyIcon
+{
+    font-size:1800%;
+}
