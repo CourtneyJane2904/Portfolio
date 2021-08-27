@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" 
+	crossorigin="" />
+	 
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin="">
+	</script>
+	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="./index.css">
+    <title>Courtney Coding</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <!--
+        Heading | bg img | tabs 
+            will be making into slideshow of imgs
+    -->
+     <header class="col-12">
+         <div id="headerImg" class="rounded">
+             <h3 id="headerTxt" class="font-weight-bold col-4">Courtney Coding</h3>
+         </div>
+         
+         <ul class="nav nav-tabs nav-justified collapsed font-weight-lighter col-12" id="tabs">
+            <li class="nav-item" id="slideshowT">
+                <a href="#aboutMe" class="nav-link tabs" data-toggle="tab">About Me</a> 
+            </li>
+             
+             <li class="nav-item">
+                <a href="#aspAndTech" class="nav-link tabs" data-toggle="tab">Aspies and Tech</a> 
+            </li>
+             
+             <li class="nav-item">
+                <a href="#skillSet" class="nav-link tabs" data-toggle="tab">My Skillset</a> 
+            </li>
+             
+             <li class="nav-item" id="tLastChild">
+                <a href="#contactMe" class="nav-link tabs" data-toggle="tab">Contact Me</a> 
+            </li>
+         </ul>
+     </header> 
+        <div id="contentWhenColled" class="col-12">
+            <div class="container col-12">
+                <h5 class="text-center custHead"><kbd>Hello and Welcome</kbd></h5>
+            </div>
+            <div id="smiley" class="container text-center">
+                <span class="far fa-smile-beam img-responsive" id="smileyIcon"></span>
+            </div>
+        </div>   
+        
+      <div class="tab-content">  
+     <div class="tab-pane fade" id="aboutMe" role="tabpanel" aria-controls="About Me" aria-selected="false">
+         <div class="container">
+            <h5 class="text-center custHead"><kbd class="col-12">Just Another Wannabe Techy</kbd></h5>
+            <p  class="text-justify para col-12 aboutMPara">
+                <img src="./media/img1.jpg"  id="aboutImgs" class="img-responsive">
+                Hello there!<br /><br />
+                Firstly, thank you for having the interest to check out my portfolio- it will be updated regularly throughout my coursework so don’t hesitate to check things out again in a few weeks. <br /><br />
+                
+                Now, about me…<br /><br />
+                
+                I’m 20 years old and I currently live in Darlington, North East England. My interest in coding and I.T has been active since the age of 17 when I was accepted as an Apprentice with ATEB I.T Solutions- this role was based around assisting with the development and maintenance of client templates through a software named Intelledox Infiniti. <br /><br />
+                
+                After a further 4 months in Cyber Security as a Junior Web App Penetration Tester, I am currently looking for home-based work in Web Development (or Offensive Security if a good offer is made).<br /><br />
+                
+                I’m a very ambitious, thoughtful and strong willed individual with a natural logical approach and a strong attention to detail- if something is wrong with code I’m writing, it will irritate me until I resolve it; additionally I’m extremely approachable and honest (some may say blunt).<br /><br />
+                
+                I’m also an Aspie- see Aspies and Tech for more info. 
+            </p>
+             </div>
+         </div>
+    
+          
+    <div class="tab-pane fade" id="aspAndTech" role="tabpanel" aria-controls="Aspies and Tech" aria-selec   ted="false">
+        <div class="container">
+            <blockquote class="blockquote text-center" id="quote">
+                <p class="mb-0">It seems that -for success in science or art- a dash of autism is essential.</p>
+                <footer class="blockquote-footer">Hans Asperger</footer>
+            </blockquote>
+            <p class="text-center col-12 para">
+                Asperger’s Syndrome -otherwise known as high-functioning Autism- is a developmental disorder identified by difficulties with social interaction, sensory difficulties and a unique world view. 
+                Although the condition causes it’s problems, it is also often found in individuals with high IQs and techies (e.g. Adrian Lamo and Gary McKinnon).<br /><br />
+
+                While my disorder means that I suffer with social anxiety and events out of my control, I also feel that coding logic comes naturally to me and I can grasp new concepts rapidly (if they interest me).
+            </p>
+            
+            <div class="row">
+            <div class="card aspies" id="adi">
+                <img class="card-img-top" src="./media/adi.jpg" alt="Adrian Lamo">
+                 <div class="card-body">
+                    <h5 class="card-title text-center">Adrian Lamo<br /><small class="text-muted">February 20, 1981 - March 14, 2018</small></h5>
+                    <p class="card-text para text-center">
+                        An American threat analyst and hacker, renown for the infiltration of several high-profile networks (Yahoo! and Microsoft are two examples).<br/><br/>
+                        In April, 2010 Lamo was institutionalized after his backpack holding his antidepressant medication was allegedly stolen and police noticed his monotone speech when responding to the incident; prior to this Lamo's father had reported his son's abuse of antidepressant medication.<br/><br/>
+                        After nine days in an institution, Lamos left with a diagnosis of Asperger's Disorder.
+                    </p>
+                 </div>
+        </div>
+            <div class="card aspies" id="gary">
+                <img class="card-img-top" src="./media/gary.jpg" alt="Gary McKinnon">
+                 <div class="card-body">
+                    <h5 class="card-title text-center">Gary McKinnon</h5>
+                    <p class="card-text para text-center">
+                       McKinnon from Scottland is a systems administrator and hacker who gained his reputation in 2002 after hacking into military computers while searching for evidence of free energy suppression and cover ups of groundbreaking technology.<br/><br/>
+                        Over a 13-month period, McKinnon allegedly gained access to 97 US military and NASA computers under the name 'Solo'.<br/><br/>
+                        Though Solo claimed this was merely a search for evidence, he also deliberately brought down multiple critical military networks in the process.<br/><br/>
+                        During Solo's trial, an expert on Autism noticed Solo on television and immediately contacted Solo's solicitor.
+                 </div>
+                </div></div>
+        </div></div>
+          
+    <div class="tab-pane fade" id="skillSet" role="tabpanel" aria-controls="Web Development" aria-selected="false">
+         <div class="container">
+            <h5 class="text-center custHead"><kbd class="col-12">What I Can Do</kbd></h5>
+            <div class="text-justify para aboutP" >
+                At present I am working through The Complete Web Development Course with Development Island. Prior to it's beginning I already had a good understanding of PHP and JavaScript; it was from self-education and therefore not industry standard.<br/><br/> 
+                
+                Future courses I will also be working through are:
+                <ul class="list-group list-group-flush"><br />
+                    <li class="list-group-item list-group-item-light">The Complete Modern JavaScript Course with ES6: Beginner to Expert</li>
+                    <li class="list-group-item list-group-item-light">Advanced PHP Programming</li>
+                    <li class="list-group-item list-group-item-light">Django Unchained with Python</li><br />
+                </ul>
+                 My skillset is constantly expanding and -if needed- I would happily learn another coding language to suit a project's needs (such as C/C++ for software programming).<br /><br/>
+                
+                 I also have experience of managing open-source CMS such as ModX and an awareness of the need for secure code and server configuration, thus code I develop will be with that in mind.<br /><br />
+                
+                 If you're interested in my web development work, please see the examples listed below.<br /><br />
+                In addition to coding, I also have a very strong interest in offensive security- namely ethical hacking; from experience I have found that this is a difficult industry to get into through self-education without money and/or time.<br />
+                Due to my interest, however, I would definitely consider a role as a Penetration Tester if training prior to the job start was offered.
+                
+            </div>
+        </div>
+    </div>
+          
+    <div class="tab-pane fade" id="contactMe" role="tabpanel" aria-controls="Contact Me" aria-selected="false">
+         <div class="container">
+             <div id="myMap" class="col-12 col-md-6"></div>
+             <div class="card col-12 col-md-5 contactCard">
+                <h5 class="custHead" id="contactH"><kbd>Reachable 24/7</kbd></h5>
+                <ul class=" list-unstyled list-group list-group-flush" id="contactDets">
+                    <li class="list-group-item">
+                        <span class="fas fa-sms"></span>
+                        <span class="fas fa-phone"></span>
+                        <a href="tel:+447 539 301 434" >+447 539 301 434</a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <span class="fas fa-envelope-open-text"></span>
+                        <a href="mailto:courtneyevans2904@gmail.com?Subject=Enquiry">courtneyevans2904@gmail.com</a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <span class="fab fa-linkedin"></span>
+                        <a href="https://www.linkedin.com/in/courtney-evans99/" target="_blank">
+                            courtney-evans99
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>   
+    <!--<div class="container-fluid">
+         <footer class="page-footer font-small col-12 fixed-bottom ">
+             <div class="fixed-bottom footR">
+            <div class="row copyRo">    
+            <div class="copyR text-center para lead col-6" id="fName">
+             
+					Courtney Evans
+				
+			</div>
+            <div class="copyR text-center para lead col-6" id="fCopyR">
+					
+                </div>	
+                
+                 </div></div>
+        </footer>    
+    </div>-->
+      <footer>
+        <nav class="navbar navbar-expand  fixed-bottom dropup">
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown col-6">
+                <a class="nav-link dropdown-toggle para" href="#" id="dropD" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Completed Projects
+                </a> 
+                <div class="dropdown-menu para" aria-labelledby="Completed Projects">
+                    <a class="dropdown-item" href="./Fruits Slice Game/index.html" target="_blank">Fruit Slice Game</a>
+                    <a class="dropdown-item" href="./Maths Game/index.html" target="_blank">Maths Game</a>
+                </div>
+            </li>
+            
+          </ul>
+          <div class="nav-item col-6 para fCopyR text-right">
+              Courtney Evans<br />
+                Copyright &copy; 2019
+          </div>
+      </div>
+          </nav>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index.js"></script>  
+    <!-- map initilization & re-tiling on resize -->
+    <script type="text/javascript">
+        var loaded=0,myMap;
+        $('#tLastChild').click(function()
+            {
+            setTimeout(function(){ myMap.invalidateSize();},200);
+                loaded++;
+                if(loaded==1)
+                {
+                    setTimeout(function()
+                        {
+                            myMap=L.map('myMap').setView([54.521044, -1.546755], 13);
+
+                            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY291cnRuZXllMjkwNCIsImEiOiJjanNleWE5M3gwbTBkNDRtZDk1cnoxemhmIn0.D1S2XCVLLTySbPZ9mfNmHg',
+                                {
+                                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                                    maxZoom: 18,
+                                    id: 'mapbox.streets',
+                                    accessToken: 'pk.eyJ1IjoiY291cnRuZXllMjkwNCIsImEiOiJjanNleWE5M3gwbTBkNDRtZDk1cnoxemhmIn0.D1S2XCVLLTySbPZ9mfNmHg'
+                                }
+                            ).addTo(myMap);
+                            var marker = L.marker([54.521044, -1.546755]).addTo(myMap);
+                        }
+                    ,100
+                    );
+                }
+                else if(loaded>1)   {setTimeout(function(){ myMap.invalidateSize();},200);};
+            }
+        );
+    </script>
+  </body>
+</html>
