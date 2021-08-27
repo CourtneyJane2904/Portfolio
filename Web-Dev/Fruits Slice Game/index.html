@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        
+        <!-- jquery/jquery UI & external files -->
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Fruit Slice</title>
+    </head>
+    <body>
+    <div id="container" class="Boxes">
+         <div id="livesLeft" class="blue Boxes"></div>
+            
+            <div id="score" class="Boxes blue">Score: <span id="scoreVal">0</span></div>
+            
+            <!-- now display screen -->
+            <div id="display" class="Boxes">
+                <div id="placeholder1"class="placeholder"></div><div id="fruit1" class="fruit"></div>
+                <div id="placeholder2"class="placeholder"></div><div id="fruit2" class="fruit"></div>
+                <div id="placeholder3"class="placeholder"></div><div id="fruit3" class="fruit"></div>
+                <div id="placeholder4"class="placeholder"></div><div id="fruit4" class="fruit"></div>
+                <div id="placeholder5"class="placeholder"></div><div id="fruit5" class="fruit"></div>
+            </div>
+        
+            <div id="instruction" class="Boxes blue">Slice the fruit.</div>
+            
+            <div id="startReset" class="Boxes">Start Game</div>
+            
+            <audio id="slicesound">
+                <source src="media/slice.mp3" type="audio/mpeg" class="audio">
+                <source src="media/slice.ogg" type="audio/mpeg" class="audio">
+            </audio>
+            <div id="gameOver" class="Boxes">
+                <p>Game Over</p>
+                <p>Your Score Is: <span id="GOscore">0</span></p>
+            </div>
+    </div>
+         <footer class="foot">
+            <div>
+                <p>
+                    Courtney Evans
+                </p>
+                <p>
+                    Copyright &copy; 2019
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
