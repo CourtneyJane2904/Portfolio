@@ -1,0 +1,74 @@
+/* font family for the page */
+html	{font-family:century gothic;word-spacing:3px;letter-spacing:1px;}
+
+#header	{padding:10px 0;height:100px;}
+
+/* container around page content to center elements */
+#container	{width:1200px;margin:0 auto;} 
+
+h1 a	{text-decoration:none;color:#B196BF;}
+
+#search-b	{padding: 20px 20px 0 20px;float:right;width:400px;height:50px;}
+
+/* Search bar with search icon added via background url */
+.text	{float:left;width:200px;padding:5px;font-size:15px;background:white url('search-icon.png') right center no-repeat;}
+
+.submit	{float:right;padding:5px;font-weight:bold;font-size:15px;background:#B196BF;color:white;}
+
+/* 
+The clear property specifies what elements can float beside the cleared element and on which side.
+
+Match the clear to the float: 
+	If an element is floated to the left, then you should clear to the left. 
+	Your floated element will continue to float, but the cleared element will appear below it on the web page. 
+*/
+
+.clear	{clear:both;}
+
+/* top menu CSS */
+#menu	{height:70px;padding:7px 0;}
+#menu ul	{list-style:none;}
+#menu ul li	{float:left;padding:0 30px;border-right:1px solid white;}
+#menu ul li:first-child	{margin-left:22%;}
+#menu ul li:last-child	{border-right:none;}
+
+#menu ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:17px;
+	color:white;
+	line-height:30px;
+	transition:font-size 0.5s linear;-webkit-transition:font-size 0.5s linear;-moz-transition:font-size 0.5s linear;-o-transition:font-size 0.5s linear;-ms-transition:font-size 0.5s linear;
+}
+
+/* Appearance of menu when an element is clicked or hovered over */
+#menu ul li a:hover,#menu ul li a.active	{font-size:20px;font-weight:bold;}
+
+/* introductory text for page */
+#pers_intro	{font-style:italic;}
+
+#intro	{background: url('intro_backg.jpg');border-radius:1px;padding:0.2px;text-align:justify;margin:6px 0;}
+#intro h3	{margin-bottom:9px;}
+
+p	{font-size:13px;margin:6px;}
+
+/* sidebar CSS */
+.sideb	{height:250px;width:300px;border:outset 1px #8080802e;border-radius:10px;padding:20px 30px;box-shadow: 5px 10px #8080804e;margin:4px;}
+
+.sideb ul	{padding-top:7px;}
+#l_sideb	{float:left;list-style-image:url('l-sidebar-bs.png');}
+#r_sideb	{float:right;list-style-image:url('r-sidebar-bs.png');}
+
+.sideb ul li	{font-size:15px;padding:3px;letter-spacing:2px;}
+
+/* footer */
+.foot	{padding:10px;height:60px;margin-top:17px;margin-bottom:10px;text-align:center;line-height:-50%;}
+
+.foot,#menu,#search-b
+	{
+	background: linear-gradient(#CEE2A5,#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA);
+	background: -webkit-linear-gradient(#CEE2A5,#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA);
+	background: -o-linear-gradient(#CEE2A5,#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA);
+	background: -moz-linear-gradient(#CEE2A5,#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA);
+}
