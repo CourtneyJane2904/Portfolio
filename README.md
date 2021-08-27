@@ -13,3 +13,7 @@ If the index.html file is opened in browser (and the directory structure matches
 These are accessible from index.html. Two very simple PoC JavaScript games.
 <h3>Pure_CSS_PoC</h3>
 A simple web interface developed using pure CSS (no jQuery etc.) Not accessible from index.html.
+
+<h2>University</h2>
+<h3>Python</h3>
+Here are several Python scripts I had to work on as part of my first year of university.
