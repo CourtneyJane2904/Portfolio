@@ -58,11 +58,11 @@ class OAuth():
         open_redirect_payloads = [
           f"{full_url}/directory",
           f"{full_url}/../directory",
-          f"{full_url}@https://breachlock.com",
-          f"https://breachlock.com#{full_url}",
-          f"{full_url}#@https://breachlock.com",
-          f"{full_url}&@https://breachlock.com#@https://breachlock.com",
-          f"{bare_url}.breachlock.com",
+          f"{full_url}@https://www.google.com",
+          f"https://www.google.com#{full_url}",
+          f"{full_url}#@https://www.google.com",
+          f"{full_url}&@https://www.google.com#@https://www.google.com",
+          f"{bare_url}.www.google.com",
           f"https://localhost/"
         ]
 
