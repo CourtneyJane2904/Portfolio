@@ -1,0 +1,103 @@
+html
+    {background: radial-gradient(circle,#9ED2A1,#D7E5A7,#F9EC9D,#F1A583,#F1A6A0,#CB9DC1);height:100%;font-family: century gothic, sans-serif;}
+
+#container
+{
+    height:400px;   width:550px;    position:relative;  background-color: #9992C5;  margin: 100px auto;  padding:25px;
+    /* margin keeps extending to left and right */
+    box-shadow: 0px 4px 0px 0px #7F7AA3;-moz-box-shadow: 0px 4px 0px 0px #7F7AA3;-webkit-box-shadow: 0px 4px 0px 0px #7F7AA3;
+    /* parent container of an absolute elemnt must be relative so it can be placed relative to it  */
+}
+
+#score  
+{
+    padding:11px;   left:490px;
+    box-shadow: 0px 4px 0px 0px #577B93;-moz-box-shadow: 0px 4px 0px 0px #577B93;-webkit-box-shadow: 0px 4px 0px 0px #577B93;font-size:13px;
+}
+
+.resultBoxes    {color:white;padding: 11px;/* positioned relative to container box */left:243px;}
+
+#score, .resultBoxes,#gameOver    {position:absolute;}
+
+#correct    {background-color: #42e252;display:none;}
+
+#wrong  {background-color: #de401a;display:none;}
+
+#question
+{
+    width:470px;    height:130px;   margin:60px auto 10px auto; font-size:100px;    text-align:center;
+    /* 
+    center element in pg
+    left/right margins are auto/centered
+    need margin top/bottom on absolute elements as they ignore each other
+    */
+    box-shadow: 0px 7px #577B93;-moz-box-shadow: 0px 7px #577B93;-webkit-box-shadow: 0px 7px #577B93;
+}
+
+#instruction    {width:470px;height:50px;box-shadow: 0px 7px #577B93;margin:20px auto;text-align: center;line-height:45px;font-size:14px;}
+
+/* Answers section */
+#answers    {width:470px;   height:100px;   margin:5px auto;}
+.answers
+{
+    width: 85px;    height: 85px;   background-color: white;    float:left; margin-right:43px;  cursor:pointer;
+    box-shadow: 0 4px rgba(0,0,0,0.2);-moz-box-shadow: 0 4px rgba(0,0,0,0.2);-webkit-box-shadow: 0 4px rgba(0,0,0,0.2);
+    text-align: center; line-height: 80px;  color:black;    position:relative;
+    /* font color transition */
+    transition:all 0.2s;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-o-transition:all 0.2s;-ms-transition:all 0.2s;
+    /* so boxes will move relative to orig position */
+}
+/* stop 4th box creating second row due to needing room for margin-right */
+#a4 {margin-right:0;}
+
+.Boxes  {border-radius:15px;}
+
+.blue,.answers:hover,.answers:active,#startReset:hover,#startReset:active    {background-color: #8EC8F0; color: #577B93; font-weight: bold;}
+
+.answers:active
+    {top:4px;   box-shadow: 0 0 rgba(0,0,0,0.2);-moz-box-shadow: 0 0 rgba(0,0,0,0.2);-webkit-box-shadow: 0 0 rgba(0,0,0,0.2);}
+
+#startReset
+{
+    width: 60px;   background-color: rgba(255,255,255,0.5); cursor:pointer;
+    margin:0 auto;  padding:10px; bottom:6px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);-moz-box-shadow: 0 4px rgba(0,0,0,0.2);-webkit-box-shadow: 0 4px rgba(0,0,0,0.2);
+    text-align: center; color:black;   position:relative;
+    /* font color transition */
+    transition:all 0.2s;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-o-transition:all 0.2s;-ms-transition:all 0.2s;
+    font-size:10px;
+    /* so boxes will move relative to orig position */
+}
+
+#startReset:active
+{
+    bottom:5px;   box-shadow: 0 0 rgba(0,0,0,0.2);-moz-box-shadow: 0 0 rgba(0,0,0,0.2);-webkit-box-shadow: 0 0 rgba(0,0,0,0.2);
+}
+
+#timeRemaining
+{
+    width:150px;    padding:10px;   position:absolute;   left:43px;font-size: 14px; text-align: center; visibility:hidden;  display:none;
+    box-shadow: 0px 5px #577B93;-moz-box-shadow: 0px 5px #577B93;-webkit-box-shadow: 0px 5px #577B93;
+}
+
+#gameOver
+{
+    height:200px;   width:500px;    background:linear-gradient(#D7E5A7,#F9EC9D,#F1A583);    color:#9992C5;    font-size:2.5em;    text-align:center; text-transform: capitalize;  top:100px;  left:45px;  z-index:2; line-height:39px; display:none;   border:solid 2px #9ED2A1;   font-weight: bold;  
+    transition:all 0.2s;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-o-transition:all 0.2s;-ms-transition:all 0.2s;
+}
+
+.foot
+{
+    padding:30px;height:60px;margin:0 -60px;text-align:center;line-height:-50%;font-weight: bold;color:lightslategrey;
+    background: radial-gradient(#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA,#CEE2A5);
+	background: -webkit-radial-gradient(#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA,#CEE2A5);
+	background: -o-radial-gradient(#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA,#CEE2A5);
+	background: -moz-radial-gradient(#FBF5A7,#F5C392,#F3A78D,#F2AAB5,#B296BF,#8BC5EA,#CEE2A5);
+    font-size:15px; border:inset 5px #CEE2A5;
+}
+
+.foot div p
+{
+   padding:2px; line-height:50%;
+    
+}
