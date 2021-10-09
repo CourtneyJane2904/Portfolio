@@ -6,7 +6,7 @@ import java.util.Collections;
 /**
  * Create an object representing a library, dependent on the Book class
  *
- * @author Courtney Evans | L3401977
+ * @author Courtney Evans
  * @version 08-10-2021
  */
 public class Library
