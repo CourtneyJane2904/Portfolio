@@ -17,3 +17,6 @@ A simple web interface developed using pure CSS (no jQuery etc.) Not accessible 
 <h2>University</h2>
 <h3>Python</h3>
 Here are several Python scripts I had to work on as part of my first year of university.
+<h3>Java</h3>
+<h4>Book.java | Library.java</h4>
+Part of an assignment for university, very basic but demonstrates key principles (OOP, lambdas, streams, collection methods (etc))
