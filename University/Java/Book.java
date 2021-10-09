@@ -2,7 +2,7 @@
 /**
  * Creates an object representing a book in a library
  *
- * @author Courtney Evans | L3401977
+ * @author Courtney Evans
  * @version 08-10-2021
  */
 public class Book
