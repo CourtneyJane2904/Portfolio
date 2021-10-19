@@ -33,3 +33,10 @@ prime_tests = [
 ]
 
 test(is_prime, prime_tests)
+
+"""
+Answer to problem: If n = 1, the algorithm can immediately return false. For every prime n > 1, 1 and n are the two factors. The algorithm searches for a third factor from 2 to floor( √n ) and returns false if it finds one. If the end of the loop is reached, n is prime.
+
+because if n = a * b and a <= b
+then a * a <= a * b = n
+"""
