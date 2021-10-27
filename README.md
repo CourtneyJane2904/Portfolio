@@ -25,5 +25,6 @@ Part of an assignment for university, very basic but demonstrates key principles
 <h2>Game Programming In Cpp</h2>
 I began working through Game Programming In C++ by Sanjay Madhav 
 <h3>Chapter One</h3>
+
 Chapter one walks you through the creation of the game PingPong and provided you with two optional exercises- add 2 player functionality and add a multiball feature. 
 I didn't enable 2 player as this basically just involves duplicating code but I did enable a multiball feature which will generate 1-5 balls of random positions and velocities. This directory holds the source code for this game, excludingthe SDL2 library.
