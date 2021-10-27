@@ -16,7 +16,15 @@ A simple web interface developed using pure CSS (no jQuery etc.) Not accessible 
 
 <h2>University</h2>
 <h3>Python</h3>
-Here are several Python scripts I had to work on as part of my first year of university.
+Here are several Python scripts I had to work on as part of university.
 <h3>Java</h3>
 <h4>Book.java | Library.java</h4>
 Part of an assignment for university, very basic but demonstrates key principles (OOP, lambdas, streams, collection methods (etc))
+
+
+<h2>Game Programming In Cpp</h2>
+I began working through Game Programming In C++ by Sanjay Madhav 
+<h3>Chapter One</h3>
+<h4>Game.cpp | Game.h | Main.cpp</h4>
+Chapter one walks you through the creation of the game PingPong and provided you with two optional exercises- add 2 player functionality and add a multiball feature. 
+I didn't enable 2 player as this basically just involves duplicating code but I did enable a multiball feature which will generate 1-5 balls of random positions and velocities.
