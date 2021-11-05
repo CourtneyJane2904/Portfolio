@@ -28,3 +28,8 @@ I began working through Game Programming In C++ by Sanjay Madhav
 
 Chapter one walks you through the creation of the game PingPong and provided you with two optional exercises- add 2 player functionality and add a multiball feature. 
 I didn't enable 2 player as this basically just involves duplicating code but I did enable a multiball feature which will generate 1-5 balls of random positions and velocities. This directory holds the source code for this game, excludingthe SDL2 library.
+
+<h3>Chapter Three</h3>
+
+Here we are talked through the creation of Asteroids and given the tasks to create circular collision detection and implement Newtonian physics (via semi-implicit Euler integration)
+My contribution to the code is within MoveComponent, CollisionComponent and Ship- I'm aware there could be improvements (such as a more realistic mass-speed ratio or further logic to account for collisions when the ship is invisible) but I am satisfied that the objectives of the chapter have been met. 
