@@ -23,7 +23,7 @@ Part of an assignment for university, very basic but demonstrates key principles
 
 
 <h2>Game Programming In Cpp</h2>
-I began working through Game Programming In C++ by Sanjay Madhav 
+I began working through Game Programming In C++ by Sanjay Madhav. Although I didn't follow each chapter religiously, it was a good start for knowing the general process of developing a game and it did introduce me to OpenGL while also allowing me to begin learning C++.
 <h3>Chapter One</h3>
 
 Chapter one walks you through the creation of the game PingPong and provided you with two optional exercises- add 2 player functionality and add a multiball feature. 
