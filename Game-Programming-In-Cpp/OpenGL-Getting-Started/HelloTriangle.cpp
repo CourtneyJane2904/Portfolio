@@ -10,7 +10,7 @@ renders a rectangle in it's current state but can be adjusted to render a triang
 #include <glad.h>
 #include <glfw3.h>
 #include <iostream>
-#include <vector>
+
 /*
 first step is to link glad and glfw3 to the project by adjusting project's include and lib dirs accordingly
 */
