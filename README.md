@@ -33,3 +33,8 @@ I didn't enable 2 player as this basically just involves duplicating code but I 
 
 Here we are talked through the creation of Asteroids and given the tasks to create circular collision detection and implement Newtonian physics (via semi-implicit Euler integration)
 My contribution to the code is within MoveComponent, CollisionComponent and Ship- I'm aware there could be improvements (such as a more realistic mass-speed ratio or further logic to account for collisions when the ship is invisible) but I am satisfied that the objectives of the chapter have been met. 
+
+<h3>OpenGL - Getting Started</h3>
+
+In preparation for developing an engine for my first 2D game, I've been working through OpenGL's Getting Started tutorials (https://learnopengl.com/Getting-started/OpenGL) This directory simply holds code from working through those.
+Not neccessarily a display of skill- more a display of learning. :)
