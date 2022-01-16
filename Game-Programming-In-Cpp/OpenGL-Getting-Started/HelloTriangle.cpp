@@ -2,7 +2,7 @@
 This is code I produced following along to OpenGL's Getting Started tutorials up until Hello Triangle
 https://learnopengl.com/Getting-started/OpenGL
 
-It's just a mess of code and commentd as my main purpose was to get acquainted with the basics of OpenGL
+It's just a mess of code and comments as my main purpose was to get acquainted with the basics of OpenGL
 renders a rectangle in it's current state but can be adjusted to render a triangle too 
 	I've specified in comments what code to comment out if this is desired
 */
