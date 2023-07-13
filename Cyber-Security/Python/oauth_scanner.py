@@ -1,26 +1,35 @@
 #!/usr/bin/python3
 
+# importing Python libraries for use in the script
 from sys import argv
 import requests
 import json
 import urllib
 
+# colours for text
 red = '\033[91m'
 reset = '\033[0m'
 
+# creating an OAuth class 
 class OAuth():
+    # called everytime an instance of the class is created. An instance is created using OAuth(url)
     def __init__(self, url):
         self.url = url
         self.parsed_url = self.parse_url(url)
         # used in check_redirect_url- false if an accepted method
         self.frags = False
 
+    # Get OAuth information from URL
     def parse_url(self, url):
+        # initializing an empty dictionary- a data structure allowing for key:value pairs like those in json.
         oauth_dict = {}
+        # splits the URL at question marks, grabs the string after question mark and splits resulting string at ambersands.
         oauth_params = url.split('?')[-1].split('&')
-
+        
         for oauth_param in oauth_params:
+            # split parameter at equals sign
             o_split = oauth_param.split('=')
+            # set query parameter key as oauth dict key and query parameter value as value for new key
             oauth_dict[o_split[0]] = o_split[1]
         return oauth_dict
 
@@ -31,7 +40,8 @@ class OAuth():
         for p in kwargs.keys(): self.parsed_url[p] = kwargs[p]
 
         # grab URL before query string and use urllib to neatly convert dictionary back to GET parameter string. 
-        url = f"{self.url.split('?')[0]}?{urllib.parse.urlencode(self.parsed_url)}"         
+        url = f"{self.url.split('?')[0]}?{urllib.parse.urlencode(self.parsed_url)}" 
+        set instance's url property to url created above
         self.url = url
         return url
 
